@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+/*reset*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-text-color: #183b56;
+  --secondary-text-color: #577592;
+  --accent-color: #2294ed;
+  --accent-color-dark: #1d69a3;
+  --padding-inline-section: 20px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-text-color);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  color: var(--secondary-text-color);
+  line-height: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+/*utility classes*/
+
+.small-bold-text {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.small-text {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.container {
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-inline: var(--padding-inline-section);
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.hover-links {
+  color: var(--primary-text-color);
+  transition: 0.2s ease-in;
+}
+
+.hover-links:hover {
+  color: var(--accent-color);
+}
+
+.primary-button {
+  background-color: var(--accent-color);
+  border-radius: 6px;
+  font-weight: 700;
+  color: white !important;
+  padding: 12px 24px;
+  box-shadow: 0 0 2px var(--secondary-text-color);
+  transition: 0.2s ease-out;
+}
+
+.primary-button:hover {
+  background-color: var(--accent-color-dark);
+}
+
+/*top banner*/
+.top-banner {
+  background-color: #e7eefb;
+}
+
+.banner-text {
+  color: #000;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  text-align: start;
+}
+
+.email-logo img {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.banner {
+  justify-content: space-between;
+}
+
+.social {
+  gap: 25px;
+}
+
+.main-nav {
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.gdsc-logo img {
+  width: 400px;
+}
+
+.nav-links {
+  flex-basis: 730px;
+}
+
+.nav-links ul {
+  justify-content: end;
+  gap: 40px;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+/* header section */
+
+header {
+  padding: 50px var(--padding-inline-section);
+}
+
+.header-section {
+  justify-content: center;
+  gap: 50px;
+}
+
+.header-left {
+  max-width: 40vw;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.header-left h1 {
+  margin-top: 20px;
+}
+
+.member-button {
+  margin-top: 20px;
+}
+
+.header-right img {
+  width: 450px;
+}
+
+/**/
+
+.big-feature-section {
+  padding: 80px var(--padding-inline-section);
+}
+
+.big-feature-container {
+  gap: 100px;
+}
+
+.feature-img img {
+  /* width: 100%; */
+  max-width: 500px;
+}
+
+.feature-desc {
+  align-items: flex-start;
+  padding-bottom: 20px;
+}
+
+.feature-desc h2 {
+  margin-bottom: 20px;
+}
+
+#second-big-feature {
+  flex-direction: row-reverse;
+}
+
+/*break*/
+
+.break-img img {
+  max-height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*cta-section*/
+
+.cta {
+  background-color: #183b56;
+  padding: 120px var(--padding-inline-section) 80px;
+}
+
+.cta-container {
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+  text-align: center;
+}
+
+.cta-container p {
+  color: white;
+  margin-top: 20px;
+}
+
+.email {
+  color: #000;
+}
+
+/*footer*/
+
+footer {
+  padding-block: 80px;
+  background-color: #e7eefb;
+}
+
+.link-col {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.subfooter {
+  background-color: #e7eefb;
+}
+
+.footer-container {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.sub-footer-container {
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.sub-footer-container p {
+  color: var(--primary-text-color);
+}
+
+.email-class {
+  color: white;
+}
